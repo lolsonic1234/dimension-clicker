@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Dimension Maker</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="//www.parsecdn.com/js/parse-1.5.0.min.js"></script>
+  </head>
+
+  <body>
+    <button type="button" id="saver">Save</button>
+    <button type="button" id="loader">Load</button>
+    <input type="text" id="loaderInfo">
+    <div>
+      <h2 class="IdForSession">ID: 0</h2>
+    </div>
+    <h1 class="dimensionName">DIMENSION MAKER</h1>
+    <h2 id="totalGained">Total money gained: $0</h2>
+    <div class="game">
+      <center><p class="credits">Created by Anthony Daluz, Deven Desai, and Courtney Manbeck</p></center>
+      <div class="upgrade-menu">
+        <div class="dirt-upgrade">
+          <img src="http://orig00.deviantart.net/8548/f/2015/234/1/6/dirt_upgrade_icon_by_anthony_daluz-d96qhot.png">
+          <p class="dirtInfoUp" id="mainTextDirt">Purified Dirt</p>
+          <p class="dirtInfoUp">The cost of this is $1000</p>
+          <p class="dirtInfoUp">Increases dirt income to 5!</p>
+        </div>
+        <div class="stone-upgrade">
+          <img src="http://orig11.deviantart.net/8be8/f/2015/238/5/8/stone_upgrade_icon_by_anthony_daluz-d978bok.png">
+          <p class="stoneInfoUp" id="mainTextStone">Purified Stone</p>
+          <p class="stoneInfoUp">The cost of this is $5000</p>
+          <p class="stoneInfoUp">Increases stone income to 20!</p>
+        </div>
+      </div>
+      <div id="wormhole">
+        <img id="clickWormhole" src="http://orig06.deviantart.net/dcd8/f/2015/233/0/5/portal_by_anthony_daluz-d96ky3m.png" alt="Wormhole" style="width:500px;height:500px;">
+
+        <div>
+          <h3 class="money">Money: <h3 class="money2">0</h3></h3>
+        </div>
+
+
+        <div>
+          <h3 class="income2">0<h3 class="income">Income: </h3></h3>
+        </div>
+
+        <div>
+          <h3 class="perSec2">Money P/S:<h3 class="perSec">0</h3></h3>
+        </div>
+
+        <div class="upgradeButtonPS">
+          <h3 class="upgrade">Upgrade For P/S</h3>
+          <h4 class="upgrade2">Increases P/S by 1</h4>
+          <h4 class="upgrade3">Costs: $100</h4>
+        </div>
+
+ </div>
+      <div class="store" id="options">
+        <div id="dirt">
+          <div>
+            <img class="dirtImage" src="http://orig02.deviantart.net/f929/f/2015/233/5/9/dirt_grass_by_anthony_daluz-d96kzha.png">
+            <h3 class="dirtInfo">Beautiful dirt to start off your beautiful dimension!</h3>
+            <h3 class="dirtInfoIn">Increases Income by 1</h3>
+            <h3 class="dirtInfoPri">The cost of this is $10</h3>
+          </div>
+        </div>
+        <div id="stone">
+          <div>
+            <img class="stoneImage" src="http://orig10.deviantart.net/bcae/f/2015/233/1/3/stone_by_anthony_daluz-d96kzgl.png">
+            <h3 class="stoneInfo">Some stone to increase your dimensions landscape!</h3>
+            <h3 class="stoneInfoIn">Increases Income by 5</h3>
+            <h3 class="stoneInfoPri">The cost of this is $40</h3>
+          </div>
+        </div>
+        <div id="minerals">
+          <div>
+            <img class="gemsImage" src="http://orig06.deviantart.net/a646/f/2015/233/a/c/minerals_by_anthony_daluz-d96kzgz.png">
+            <h3 class="gemsInfo">Some gems to shine in your dimension!</h3>
+            <h3 class="gemsInfoIn">Increases Income by 20</h3>
+            <h3 class="gemsInfoPri">The cost of this is $300</h3>
+          </div>
+        </div>
+        <div id="metals">
+          <div>
+            <img class="metalImage" src="http://orig12.deviantart.net/e012/f/2015/233/4/5/metals_by_anthony_daluz-d96kzh1.png">
+            <h3 class="metalsInfo">Nice gold, iron and bronze for your dimension!</h3>
+            <h3 class="metalsInfoIn">Increases Income by 80</h3>
+            <h3 class="metalsInfoPri">The cost of this is $1000</h3>
+          </div>
+        </div>
+        <div id="water">
+          <div>
+            <img class="waterImage" src="http://orig08.deviantart.net/6c4a/f/2015/233/6/d/water_by_anthony_daluz-d96kzga.png">
+            <h3 class="watersInfo">Hey wanna go swimming?</h3>
+            <h3 class="watersInfoIn">Increases Income by 150</h3>
+            <h3 class="watersInfoPri">The cost of this is $2000</h3>
+          </div>
+        </div>
+        <div id="light">
+          <div>
+            <img class="lightImage" src="http://orig11.deviantart.net/3bae/f/2015/233/d/6/light_by_anthony_daluz-d96kzh6.png">
+            <h3 class="lightsInfo">Let there be light!</h3>
+            <h3 class="lightsInfoIn">Increases Income by 300</h3>
+            <h3 class="lightsInfoPri">The cost of this is $5000</h3>
+          </div>
+        </div>
+        <div id="air">
+          <div>
+            <img class="airImage" src="http://orig11.deviantart.net/e681/f/2015/233/8/2/air_by_anthony_daluz-d96kzg2.png">
+            <h3 class="airsInfo">Can you feel the nice winter breeze? Lovely Air!</h3>
+            <h3 class="airsInfoIn">Increases Income by 500</h3>
+            <h3 class="airsInfoPri">The cost of this is $10000</h3>
+          </div>
+        </div>
+        <div id="cell">
+          <div>
+            <img class="cellImage" src="http://orig09.deviantart.net/f98f/f/2015/234/8/0/cell_by_anthony_daluz-d96q3q3.png">
+            <h3 class="cellsInfo">Its a small step for us... but worth it!</h3>
+            <h3 class="cellsInfoIn">Increases Income by 1000</h3>
+            <h3 class="cellsInfoPri">The cost of this is $100000</h3>
+          </div>
+        </div>
+      </div>
+
+        <div class="numOfItems">
+          <h2 class="dirt">Dirt: <h2 class="damount">0</h2></h2>
+          <br>
+          <h2 class="stone">Stone: <h2 class="samount">0</h2></h2>
+          <br>
+          <h2 class="gems">Gems: <h2 class="gamount">0</h2></h2>
+          <br>
+          <h2 class="metals">Metals: <h2 class="meamount">0</h2></h2>
+          <br>
+          <h2 class="water">Water: <h2 class="wamount">0</h2></h2>
+          <br>
+          <h2 class="light">Light: <h2 class="lamount">0</h2></h2>
+          <br>
+          <h2 class="air">Air: <h2 class="aamount">0</h2></h2>
+          <br>
+          <h2 class="cell">Cell: <h2 class="ceamount">0</h2></h2>
+        </div>
+    </div>
+
+
+
+    <script src="//code.jquery.com/jquery-1.10.2.js">
+    </script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js">
+    </script>
+    <script src="cookie-clicker.js"></script>
+  </body>
+
+</html>

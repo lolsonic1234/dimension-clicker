@@ -1,0 +1,614 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+.IdForSession {
+  color: white;
+}
+
+.credits {
+  position: absolute;
+  bottom: 675px;
+  right: 435px;
+}
+
+.dimensionName {
+  right: 125px;
+  position: relative;
+}
+
+#totalGained {
+  position: relative;
+  color: white;
+  float: right;
+  margin-top: -55px;
+  margin-right: 40px;
+}
+
+h2 {
+  position: absolute;
+}
+
+.stone {
+  margin-top: 40px;
+}
+
+.gems {
+  margin-top: 60px;
+}
+
+.metals {
+  margin-top: 80px;
+}
+
+.water {
+  margin-top: 100px;
+}
+
+.light{
+  margin-top: 120px;
+}
+
+.air {
+  margin-top: 140px;
+}
+
+.cell {
+  margin-top: 160px;
+}
+
+.damount {
+  padding-left: 90px;
+}
+
+.samount {
+  margin-top: 40px;
+  padding-left: 90px;
+}
+
+.gamount {
+  margin-top: 60px;
+  padding-left: 90px;
+}
+
+.meamount {
+  margin-top: 80px;
+  padding-left: 90px;
+}
+
+.wamount {
+  margin-top: 100px;
+  padding-left: 90px;
+}
+
+.lamount {
+  margin-top: 120px;
+  padding-left: 90px;
+}
+
+.aamount {
+  margin-top: 140px;
+  padding-left: 90px;
+}
+
+.ceamount {
+  margin-top: 160px;
+  padding-left: 90px;
+}
+
+.money {
+  float:left;
+}
+
+.money2 {
+  float:left;
+  margin-left: 10px;
+}
+
+.income {
+  float: right;
+}
+
+.income2 {
+  margin-left: 10px;
+  float: right;
+}
+
+.perSec2 {
+  margin-top: 50px;
+  position: absolute;
+  float:left;
+}
+
+.perSec {
+  margin-left: 110px;
+  position: relative;
+  position: absolute;
+  margin-top: 50px;
+}
+
+.upgradeButtonPS {
+  margin-left: 327px;
+  float: center;
+  background-color: RGBA(0,0,50,.5);
+  min-width: 200px;
+  max-width: 200px;
+  min-height: 100px;
+  max-height: 100px;
+  margin-top: 60px;
+  transition: min-width 1s, min-height 1s, max-width 1s, max-height 1s, margin-left 1s;
+}
+
+.upgradeButtonPS:hover {
+  background-color: RGBA(0,0,50,.5);
+  min-width: 240px;
+  max-width: 240px;
+  min-height: 140px;
+  max-height: 140px;
+  margin-top: 60px;
+  margin-left: 280px;
+}
+
+.upgrade {
+  position: relative;
+  text-align: center;
+}
+
+.upgrade2 {
+
+}
+
+.upgrade3 {
+
+}
+
+.ceamount, .aamount, .lamount, .wamount, .meamount, .gamount, .samount, .damount  {
+  margin-left: 10px;
+  float: left;
+}
+
+.numOfItems {
+  float: right;
+  border: 10px solid white;
+  width: 150px;
+  height: 640px;
+  padding: 10px;
+}
+
+body {
+  background-color: black;
+}
+
+
+
+h1{
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color: white;
+}
+
+div {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+
+
+}
+
+.game {
+  border: 10px solid white;
+  margin:auto;
+  width: 92%;
+  height: 700px;
+  padding: 10px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+#wormhole {
+  border: 5px solid white;
+  width: 500px;
+  height: 500px;
+  min-width: 530px;
+  max-width: 530px;
+  margin-right: auto;
+  margin-top: 25px;
+  float: left;
+}
+
+.store#options {
+  border: 5px solid white;
+/*   border-radius: 10%; */
+  min-width: 470px;
+  max-width: 430px;
+  margin-left: auto;
+  height: 640px;
+  width: 400px;
+  margin-top: 25px;
+  overflow:scroll;
+  float:left;
+
+/*   margin: auto;
+  width: 60%;
+  padding: 10px; */
+}
+
+#dirt, #stone, #minerals, #metals, #water, #light, #air, #cell {
+  border: 5px solid white;
+  height: 440px;
+  transition: height 1s;
+}
+
+#dirt:hover, #stone:hover, #minerals:hover, #metals:hover, #water:hover, #light:hover, #air:hover, #cell:hover {
+  transition: height 1s;
+  height: 570px;
+}
+
+#dirt div:hover .dirtInfo{
+  visibility: visible;
+  color: white;
+  transition: visibility 2s, color 5s;
+}
+
+#dirt div:hover .dirtInfoIn{
+  visibility: visible;
+  color: white;
+  transition: visibility 2s, color 6s;
+}
+
+#dirt div:hover .dirtInfoPri{
+  visibility: visible;
+  color: white;
+  transition: visibility 2s, color 6s;
+}
+
+
+.dirtInfo{
+  visibility: hidden;
+  color: black;
+  transition: visibility .4s, color 1s;
+}
+
+.dirtInfoIn{
+  visibility: hidden;
+  color: black;
+  transition: visibility .2s, color 1s;
+}
+
+.dirtInfoPri{
+  visibility: hidden;
+  color: black;
+  transition: visibility .1s, color 1s;
+}
+
+
+#stone div:hover .stoneInfo{
+  visibility: visible;
+  color: white;
+  transition: visibility 2s, color 5s;
+}
+
+#stone div:hover .stoneInfoIn{
+  visibility: visible;
+  color: white;
+  transition: visibility 2s, color 6s;
+}
+
+#stone div:hover .stoneInfoPri{
+  visibility: visible;
+  color: white;
+  transition: visibility 2s, color 6s;
+}
+
+.stoneInfo{
+  visibility: hidden;
+  color: black;
+  transition: visibility .4s, color 1s;
+}
+
+.stoneInfoIn{
+  visibility: hidden;
+  color: black;
+  transition: visibility .2s, color 1s;
+}
+
+.stoneInfoPri{
+  visibility: hidden;
+  color: black;
+  transition: visibility .1s, color 1s;
+}
+
+#minerals div:hover .gemsInfo{
+  visibility: visible;
+  color: white;
+  transition: visibility 2s, color 5s;
+}
+
+#minerals div:hover .gemsInfoIn{
+  visibility: visible;
+  color: white;
+  transition: visibility 2s, color 6s;
+}
+
+#minerals div:hover .gemsInfoPri{
+  visibility: visible;
+  color: white;
+  transition: visibility 2s, color 6s;
+}
+
+.gemsInfo{
+  visibility: hidden;
+  color: black;
+  transition: visibility .4s, color 1s;
+}
+
+.gemsInfoIn{
+  visibility: hidden;
+  color: black;
+  transition: visibility .2s, color 1s;
+}
+
+.gemsInfoPri{
+  visibility: hidden;
+  color: black;
+  transition: visibility .1s, color 1s;
+}
+
+#metals div:hover .metalsInfo{
+  visibility: visible;
+  color: white;
+  transition: visibility 2s, color 5s;
+}
+
+#metals div:hover .metalsInfoIn{
+  visibility: visible;
+  color: white;
+  transition: visibility 2s, color 6s;
+}
+
+#metals div:hover .metalsInfoPri{
+  visibility: visible;
+  color: white;
+  transition: visibility 2s, color 6s;
+}
+
+.metalsInfo{
+  visibility: hidden;
+  color: black;
+  transition: visibility .4s, color 1s;
+}
+
+.metalsInfoIn{
+  visibility: hidden;
+  color: black;
+  transition: visibility .2s, color 1s;
+}
+
+.metalsInfoPri{
+  visibility: hidden;
+  color: black;
+  transition: visibility .1s, color 1s;
+}
+
+#water div:hover .watersInfo{
+  visibility: visible;
+  color: white;
+  transition: visibility 2s, color 5s;
+}
+
+#water div:hover .watersInfoIn{
+  visibility: visible;
+  color: white;
+  transition: visibility 2s, color 6s;
+}
+
+#water div:hover .watersInfoPri{
+  visibility: visible;
+  color: white;
+  transition: visibility 2s, color 6s;
+}
+
+.watersInfo{
+  visibility: hidden;
+  color: black;
+  transition: visibility .4s, color 1s;
+}
+
+.watersInfoIn{
+  visibility: hidden;
+  color: black;
+  transition: visibility .2s, color 1s;
+}
+
+.watersInfoPri{
+  visibility: hidden;
+  color: black;
+  transition: visibility .1s, color 1s;
+}
+
+#light div:hover .lightsInfo{
+  visibility: visible;
+  color: white;
+  transition: visibility 2s, color 5s;
+}
+
+#light div:hover .lightsInfoIn{
+  visibility: visible;
+  color: white;
+  transition: visibility 2s, color 6s;
+}
+
+#light div:hover .lightsInfoPri{
+  visibility: visible;
+  color: white;
+  transition: visibility 2s, color 6s;
+}
+
+.lightsInfo{
+  visibility: hidden;
+  color: black;
+  transition: visibility .4s, color 1s;
+}
+
+.lightsInfoIn{
+  visibility: hidden;
+  color: black;
+  transition: visibility .2s, color 1s;
+}
+
+.lightsInfoPri{
+  visibility: hidden;
+  color: black;
+  transition: visibility .1s, color 1s;
+}
+
+#air div:hover .airsInfo{
+  visibility: visible;
+  color: white;
+  transition: visibility 2s, color 5s;
+}
+
+#air div:hover .airsInfoIn{
+  visibility: visible;
+  color: white;
+  transition: visibility 2s, color 6s;
+}
+
+#air div:hover .airsInfoPri{
+  visibility: visible;
+  color: white;
+  transition: visibility 2s, color 6s;
+}
+
+.airsInfo{
+  visibility: hidden;
+  color: black;
+  transition: visibility .4s, color 1s;
+}
+
+.airsInfoIn{
+  visibility: hidden;
+  color: black;
+  transition: visibility .2s, color 1s;
+}
+
+.airsInfoPri{
+  visibility: hidden;
+  color: black;
+  transition: visibility .1s, color 1s;
+}
+
+#cell div:hover .cellsInfo{
+  visibility: visible;
+  color: white;
+  transition: visibility 2s, color 5s;
+}
+
+#cell div:hover .cellsInfoIn{
+  visibility: visible;
+  color: white;
+  transition: visibility 2s, color 6s;
+}
+
+#cell div:hover .cellsInfoPri{
+  visibility: visible;
+  color: white;
+  transition: visibility 2s, color 6s;
+}
+
+.cellsInfo{
+  visibility: hidden;
+  color: black;
+  transition: visibility .4s, color 1s;
+}
+
+.cellsInfoIn{
+  visibility: hidden;
+  color: black;
+  transition: visibility .2s, color 1s;
+}
+
+.cellsInfoPri{
+  visibility: hidden;
+  color: black;
+  transition: visibility .1s, color 1s;
+}
+
+
+.upgrade-menu{
+  float: left;
+  position: absolute;
+}
+
+.dirt-upgrade, .stone-upgrade{
+  position: absolute;
+  margin-top: 25px;
+  visibility: hidden;
+  max-height: 50px;
+  max-width: 50px;
+  border: 9px solid white;
+  padding: auto;
+  float: left;
+  transition: max-width .2s, max-height .2s, min-height .2s, min-width .2s;
+}
+
+.dirt-upgrade:hover, .stone-upgrade:hover{
+  max-height: 180px;
+  max-width: 300px;
+  min-height: 180px;
+  min-width: 300px;
+  border: 9px solid white;
+  position: absolute;
+  margin-top: 25px;
+  padding: auto;
+  float: left;
+}
+
+.dirt-upgrade:hover .dirtInfoUp{
+  visibility: visible;
+  color: white;
+  font-size: 18px;
+  transition: visibility .1s, color 1s;
+}
+
+.dirtInfoUp{
+  visibility: hidden;
+  color: black;
+  transition: visibility 0s, color 0s;
+}
+
+.stone-upgrade:hover .stoneInfoUp{
+  visibility: visible;
+  color: white;
+  font-size: 18px;
+  transition: visibility .1s, color 1s;
+}
+
+.stoneInfoUp{
+  visibility: hidden;
+  color: black;
+  transition: visibility 0s, color 0s;
+}
+
+p{
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
+
+#saver {
+  position: absolute;
+  left:0;
+}
+
+#loader {
+  margin-left: 50px;
+  position: absolute;
+  left: 0;
+}
+
+#loaderInfo {
+  position: relative;
+  margin-left: 100px;
+  left: 0;
+}
+
+.IdForSession {
+  float:left;
+}
