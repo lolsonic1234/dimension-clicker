@@ -1,5 +1,3 @@
-console.log("HEY I'M RELEVANT!")
-Parse.initialize("Izb7bAAWdMMwjo3cDcAxK3TSwNSkdabwiFiMhuiN", "qx0OX2gFtY0e86xVShHHPabGcYktm6TgbEHRCtf0");
 
 var totalDCGained = 0;
 var income = 0;
@@ -322,18 +320,6 @@ $(document).ready(function(){
       $(".IdForSession").text("ID: " + saveFiles.id);
     });
   });
-
-  function autoSave(){
-    console.log("its working?")
-    var everySingleThing = {totalDCGained, currencyDC, income, dirtUpgrade, stoneUpgrade, dirtQuantity, dirtPrice, dirtPriceInc, dirtIncome, stoneQuantity, stonePrice, stonePriceInc, stoneIncome, mineralsQuantity, mineralsPrice, mineralsPriceInc, metalsQuantity, metalsPrice, metalsPriceInc, waterQuantity, waterPrice, waterPriceInc, lightQuantity, lightPrice, lightPriceInc, airQuantity, airPrice, airPriceInc, cellQuantity, cellPrice, cellPriceInc, perSec, perSecPrice, perSecPriceInc,  portalImage7,  portalImage6,  portalImage5,  portalImage4,  portalImage3,  portalImage2,  portalImage1, dirtImage, stoneImage, mineralImage, metalImage, waterImage, lightImage, airImage, cellImage, name, dirtName, stoneName, gemName, metalName, waterName, lightName, airName,cellName}
-    var SaveFiles = Parse.Object.extend("saveFiles");
-    var saveFiles = new SaveFiles();
-    saveFiles.save(everySingleThing).then(function(object) {
-      $(".IdForSession").text("ID: " + saveFiles.id);
-    });
-  };
-
-  setInterval(autoSave, 300000);
 
   $("#loader").click(function(){
     new Parse.Query("saveFiles").get($("#loaderInfo").val(),{
